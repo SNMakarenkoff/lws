@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+} 
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center; 
+    height: 70px;
+    background-color: rgba(85, 85, 85, 0.73);
+    border-radius: 5px;
+    -webkit-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+    -moz-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+    box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+}
+
+.header p {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35pt;
+    font-weight: 700;
+}
+
+.life {
+    color: rgb(217, 13, 60);
+}
+
+.header ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.header ul li:hover {
+    border-right: 1px solid #ebe0e0;
+}
+
+.header ul li a:hover {
+    text-decoration: none;
+    color: #ebe0e0;
+    font-weight: 600;
+}
+
+main {
+    -webkit-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+    -moz-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+    box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+}
