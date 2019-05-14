@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -16,7 +18,7 @@
     flex-direction: row;
     align-items: center; 
     height: 70px;
-    background-color: rgba(85, 85, 85, 0.73);
+    background-color: rgba(65, 60, 60, 0.73);
     border-radius: 5px;
     -webkit-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
     -moz-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
@@ -42,7 +44,7 @@
 .header ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    font-size: 1.1em;
 }
 
 .header ul li:hover {
@@ -51,11 +53,24 @@
 
 .header ul li a:hover {
     text-decoration: none;
-    color: #ebe0e0;
-    font-weight: 600;
+    color: #333030;
+    font-size: 1.1em;
 }
 
 main {
+    -webkit-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+    -moz-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+    box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center; 
+    height: 70px;
+    background-color: rgba(65, 60, 60, 0.73);
+    border-radius: 5px;
     -webkit-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
     -moz-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
     box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
