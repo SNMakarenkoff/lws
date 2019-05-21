@@ -99,15 +99,15 @@ main hr {
 
 .article_min {
     display: flex;
-/*    justify-content: center;*/
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     border-radius: 5px;
     height: 500px;
     width: 400px;
     margin: 30px;
     padding: 15px;
+    background-color: #c7c7c7;
     -webkit-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
     -moz-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
     box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
