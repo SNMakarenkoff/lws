@@ -65,9 +65,8 @@
 
 main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     min-height: 85vh;
-    align-items: center;
     background-color: #dbdbdb;
     border-radius: 5px;
 }
@@ -83,7 +82,6 @@ main p {
     padding: 15px;
     font-size: 1.3em;
     max-width: 80ch;
-    
 }
 
 main hr {
@@ -92,6 +90,66 @@ main hr {
     background-color: black;
     border: none;
 }
+
+.wrapper_minart {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.article_min {
+    display: flex;
+/*    justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 500px;
+    width: 400px;
+    margin: 30px;
+    padding: 15px;
+    -webkit-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+    -moz-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+    box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
+}
+
+.img_min img {
+    height: auto;
+    width: 200px;
+}
+
+.desc_min {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.desc_min h2 {
+    text-transform: uppercase;
+}
+
+.desc_min p{
+    font-size: 14px;
+}
+
+.desc_min a {
+    display: block;
+    background-color: rgb(217, 13, 60);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 80px;
+    text-decoration: none;
+}
+
+.desc_min a:hover {
+    background-color: rgb(137, 12, 41);
+    -webkit-box-shadow: 21px 19px 10px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 21px 19px 10px -10px rgba(0,0,0,0.48);
+    box-shadow: 21px 19px 10px -10px rgba(0,0,0,0.48);
+} 
 
 footer {
     display: flex;
