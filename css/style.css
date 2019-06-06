@@ -43,26 +43,24 @@
 
 .header ul li {
     display: inline-block;
-    padding: 18px;
+    padding: 0 10px;
 }
 
 .header ul li a {
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: bold;
+    line-height: 70px;
 }
-
-
-.header ul li:hover {
-    border-bottom: 3px solid white;
-    padding: 15px 18px;
-}
-
 
 .header ul li a:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #fcfafa;
     text-decoration: none;
-    color: #6d6767;
+    color: black;
 }
 
 main {
