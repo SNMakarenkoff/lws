@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -19,10 +20,11 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center; 
-    height: 70px;
+    min-height: 70px;
     border-bottom-right-radius: 15px;
-    background-color: #100f0f
-
+    background-color: #100f0f;
+    width: 100%;
+    position: fixed;
 }
 
 .header p {
@@ -65,6 +67,7 @@
     color: black;
 }
 
+
 main {
     display: flex;
     min-height: 85vh;
@@ -90,7 +93,7 @@ main hr {
     flex-flow: row wrap;
     justify-content: center;
     width: 80%;
-    margin: 0 auto;   
+    margin: 50px auto;   
 }
 
 
@@ -166,7 +169,7 @@ main hr {
 
 
 .aticle_min_bottom a:active {
-    background-color: rgb(147, 10, 41);
+    background-color: rgb(95, 10, 30);
 }
 
 .wrapper_about {
@@ -206,3 +209,94 @@ footer {
     -moz-box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
     box-shadow: 11px 10px 14px -5px rgba(122,118,122,1);
 }
+
+
+#menu-checkbox {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 1386px) {
+    .header {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .header p {
+        text-transform: uppercase;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        color: white;
+}
+    
+    .main-menu {
+        display: none;
+  }
+    
+  .main-menu li {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+  }
+    
+    .main-menu li:last-child {
+            margin-bottom: 30px;
+    }
+    
+  .main-menu a {
+    display: block;
+    padding: 8px;
+  }
+    .toggle-button {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin: 15px;
+  }
+    .toggle-button:after {
+      content: attr(data-open);
+      display: block;
+    }
+
+    #menu-checkbox:checked + nav[role="navigation"] .main-menu {
+      display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-button::after {
+      content: attr(data-close);
+    }
+    
+    .main-menu {
+      position: relative;
+      top: 20px;
+      left: 150px;
+    }
+    
+    .logo {
+        margin: 0 30px;
+    }
+    
+    [data-open] {
+        font-weight: 700;
+        font-size: 18px;
+}
+    
+    [data-open]:hover {
+        color: rgb(217, 13, 60);
+}
+
+    
+}
+
