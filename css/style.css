@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -53,10 +54,12 @@
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 70px;
     padding: 0 10px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    letter-spacing: 1px;
 }
 
 .header ul li a:hover {
@@ -109,15 +112,6 @@ main hr {
     
 }
 
-/*
-.article_min:hover {
-    background-color: #d9d1d1;
-    border-radius: 25px;
-    transition: 1s;
-    
-}
-*/
-
 .article_min_top {
     height: 55%;
     width: 100%;
@@ -168,7 +162,7 @@ main hr {
 } 
 
 
-.aticle_min_bottom a:active {
+.article_min_bottom a:active {
     background-color: rgb(95, 10, 30);
 }
 
@@ -230,16 +224,12 @@ footer {
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     
     .header p {
-        text-transform: uppercase;
-        font-family: 'Ubuntu', sans-serif;
         font-size: 25px;
-        font-weight: 700;
-        color: white;
-}
+    }
     
     .main-menu {
         display: none;
@@ -264,7 +254,7 @@ footer {
     display: block;
     cursor: pointer;
     color: #fff;
-    margin: 15px;
+    margin: 0 35px;
   }
     .toggle-button:after {
       content: attr(data-open);
